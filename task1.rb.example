@@ -1,3 +1,19 @@
-# Task 1
+# encoding: cp866
 
-# Put your code here
+if ARGV.length != 4
+  puts "Введите 4 аргумента"
+  exit
+end
+for i in 0 ... ARGV.length
+  if  ARGV[i].to_f < -10000 || ARGV[i].to_f>10000
+  puts "Аргументы вне диапазона -10000 и 10000"
+  exit
+  elsif 
+  puts ARGV[i]
+  end
+end
+
+result =  Math.sqrt((ARGV[2].to_f - ARGV[0].to_f)**2+(ARGV[3].to_f - ARGV[1].to_f)**2)
+
+puts ((result + 0.005) * 100).to_i / 100.0
+ 
