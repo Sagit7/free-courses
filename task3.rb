@@ -3,10 +3,7 @@ for i in 0 ... ARGV.length
   exit;
   end
 end
-
- a = ARGV[0].to_i
- b = ARGV[1].to_i
-
- result =  a.gcd(b)
-
- puts result
+a = ARGV[0].to_i
+b = ARGV[1].to_i
+result =  a.gcd(b)
+puts result
